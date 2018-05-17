@@ -1,0 +1,38 @@
+.app{
+  height:100%;
+  padding-top:50px;
+  box-sizing:border-box;
+  .app-nav{
+    background:#3588e3;
+    position:fixed;
+    left:0;
+    right:0;
+    top:0;
+    .mid{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+    }
+    a{
+      display: inline-block;
+      font-size:16px;
+      color:#fff;
+      text-decoration:none;
+      height:50px;
+      line-height:50px;
+      padding:0 30px;
+      box-sizing:border-box;
+      &.active{
+        background:#EB4929;
+      }
+    }
+  }
+  .app-main{
+    height:100%;
+    overflow:auto;
+    padding-top:20px;
+    padding-bottom:100px;
+    box-sizing:border-box;
+    background:#f5f5f5;
+  }
+}

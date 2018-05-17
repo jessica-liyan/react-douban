@@ -1,0 +1,34 @@
+.pagination{
+  font-size:0;
+  .btn{
+    display:inline-block;
+      height:24px;
+      line-height:24px;
+      border:1px solid #ddd;
+      background:#fff;
+      vertical-align:middle;
+      padding:0 8px;
+      font-size:14px;
+      color:#333;
+      margin:0 3px;
+      cursor:pointer;
+      transition:0.3s;
+    &:hover{
+      border-color:#3588E3;
+      color:#3588E3;
+    }
+    &.active{
+      background:#3588E3;
+      border-color:#3588E3;
+      color:#fff;
+    }
+    &.hide{
+      display:none;
+    }
+  }
+  .pagination-list{
+    display:inline-block;
+    vertical-align:middle;
+    font-size:0;
+  }
+}

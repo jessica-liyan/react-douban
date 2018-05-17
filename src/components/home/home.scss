@@ -1,0 +1,58 @@
+
+.swipe{
+  height:270px;
+  position: relative;
+  button{
+    position: absolute;
+    right:20px;
+    top:50%;
+    transform:translateY(-50%);
+    background:none;
+    border:0;
+    z-index:2;
+    img{
+      width:20px;
+    }
+    &:first-child{
+      left:20px;
+      right:auto;
+    }
+  }
+  .swipe-list{
+    font-size:0;
+    width:100%;
+    position: relative;
+    li{
+      display: inline-block;
+      width:40%;
+      vertical-align:bottom;
+      text-align:center;
+      padding:20px 0;
+      border:1px solid #999;
+      background:#fff;
+      font-size:14px;
+      color:#333;
+      position: absolute;
+      left:0;
+      top:0;
+      transition:0.5s ease-in-out;
+      img{
+        height:200px;
+      }
+      &:nth-child(1){
+        background:rgba(0,0,0,0.1);
+        transform:scale(0.9);
+      }
+      &:nth-child(2){
+        left:30%;
+        z-index:1;
+        transform:scale(1);
+      }
+      &:nth-child(3){
+        background:rgba(0,0,0,0.1);
+        left:60%;
+        transform:scale(0.9);
+      }
+    }
+  }
+}

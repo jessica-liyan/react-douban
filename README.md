@@ -1,2 +1,1 @@
-# react-douban
-douban API
+# douban-react-webpack
